@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Design;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -16,10 +17,9 @@ namespace Calculator_App
     {
         //variables
         private string userInput = ""; //used to track the user's inputs
-        private string result = ""; //used to display the calculated result
-        private bool isResultDisplayed = false; //used to determine if the result is currently displayed
-        private double[] answers = new double[1]; //used to track the latest and previous answers
-        private double prevAns = 0;
+        private bool isResultDisplayed = false; //used to determine if the result is currently displayed 
+        private double prevAns = 0; //used to track the previous answers
+        DataTable dataTable = new DataTable();
 
         //methods
         private void addSpecialChar(string toBeInputted)
@@ -39,6 +39,7 @@ namespace Calculator_App
             if (shouldClear())
             {
                 displayBox.Text = "";
+                isResultDisplayed = false;
             }
 
             //check if toBeInputted is a mathematical symbol
@@ -92,7 +93,7 @@ namespace Calculator_App
         private void CalculatorForm_Load(object sender, EventArgs e)
         {
             centerTextBox();
-            answers[0] = 0.0;
+            prevAns = 0.0;
         }
 
         private void zeroBttn_Click(object sender, EventArgs e)
@@ -162,7 +163,7 @@ namespace Calculator_App
 
         private void prevAnsBttn_Click(object sender, EventArgs e)
         {
-            addToDisplay(answers[0].ToString());
+            addToDisplay(prevAns.ToString());
         }
 
         private void leftBraceBttn_Click(object sender, EventArgs e)
@@ -233,9 +234,96 @@ namespace Calculator_App
             addSpecialChar("-");
         }
 
+        private String replaceRoots(String userInput)
+        {
+            userInput = Regex.Replace(userInput, @"(√+)(\d+)", match =>
+            {
+                int sqrtCount = match.Groups[1].Value.Length;
+                double number = double.Parse(match.Groups[2].Value);
+
+                // Check if sqrtCount is greater than 0 to avoid Math.Pow with negative exponent
+                return sqrtCount > 0 ? Math.Pow(number, 1.0 / Math.Pow(2, sqrtCount)).ToString() : number.ToString();
+            });
+
+            return userInput;
+        }
+
+        private String replaceAdjacentBraces(String subExpression)
+        {
+            //replace nrs in the format (x)(b) and x(b)
+            subExpression = Regex.Replace(subExpression, @"\)\(", ")*(");
+            subExpression = Regex.Replace(subExpression, @"\d\(", match => match.Value[0] + "*(");
+            
+            return subExpression;
+        }
+
         private void equalsBttn_Click(object sender, EventArgs e)
         {
+            userInput = displayBox.Text;
 
+            try
+            {
+                // Replace unsupported symbols
+                userInput = userInput.Replace(" ", "");
+                userInput = userInput.Replace("÷", "/");
+                userInput = userInput.Replace("×", "*");
+
+                userInput = replaceAdjacentBraces(userInput);
+
+                // Evaluate expressions within parentheses first
+                userInput = EvaluateParentheses(userInput);
+
+                // Replace square root (√) with Math.Sqrt
+                userInput = replaceRoots(userInput);
+
+                // Replace squared (²) with Math.Pow(x, 2)
+                userInput = Regex.Replace(userInput, @"(\d+)²", match => Math.Pow(double.Parse(match.Groups[1].Value), 2).ToString());
+
+                // Use DataTable.Compute to evaluate the modified expression
+                var result = dataTable.Compute(userInput, "");
+
+                // Set the result to the display box
+                displayBox.Text = result.ToString();
+                isResultDisplayed = true;
+                centerTextBox();
+
+                // Store the result in the answers array for future reference
+                prevAns = Convert.ToDouble(result);
+            }
+            catch (Exception ex)
+            {
+                // Handle any errors that may occur during the computation
+                displayBox.Text = $"Error: {userInput}";
+            }
         }
+
+        private string EvaluateParentheses(string expression)
+        {
+            while (expression.Contains("(") && expression.Contains(")"))
+            {
+                int openIndex = expression.LastIndexOf('(');
+                int closeIndex = expression.IndexOf(')', openIndex);
+
+                if (openIndex == -1 || closeIndex == -1 || closeIndex <= openIndex)
+                {
+                    throw new InvalidOperationException("Mismatched parentheses.");
+                }
+
+                string subExpression = expression.Substring(openIndex + 1, closeIndex - openIndex - 1);
+
+                // Replace square root (√) with Math.Sqrt
+                subExpression = replaceRoots(subExpression);
+
+                // Replace squared (²) with Math.Pow(x, 2)
+                subExpression = Regex.Replace(subExpression, @"(\d+)²", match => Math.Pow(double.Parse(match.Groups[1].Value), 2).ToString());
+
+                double result = Convert.ToDouble(dataTable.Compute(subExpression, ""));
+
+                expression = expression.Remove(openIndex, closeIndex - openIndex + 1).Insert(openIndex, result.ToString());
+            }
+
+            return expression;
+        }
+
     }
 }

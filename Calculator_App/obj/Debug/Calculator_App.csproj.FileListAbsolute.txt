@@ -8,3 +8,5 @@ G:\Documents\C# Projects\Calculator\Calculator_App\obj\Debug\Calculator_App.cspr
 G:\Documents\C# Projects\Calculator\Calculator_App\obj\Debug\Calculator_App.exe
 G:\Documents\C# Projects\Calculator\Calculator_App\obj\Debug\Calculator_App.pdb
 G:\Documents\C# Projects\Calculator\Calculator_App\obj\Debug\Calculator_App.CalculatorForm.resources
+G:\Documents\C# Projects\Calculator\Calculator_App\bin\Debug\NCalc.dll
+G:\Documents\C# Projects\Calculator\Calculator_App\obj\Debug\Calculator_App.csproj.CopyComplete
