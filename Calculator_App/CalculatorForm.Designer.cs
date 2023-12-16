@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.displayLbl = new System.Windows.Forms.Label();
             this.btnPanel = new System.Windows.Forms.Panel();
             this.divideBttn = new System.Windows.Forms.Button();
             this.rightBraceBttn = new System.Windows.Forms.Button();
@@ -53,21 +52,9 @@
             this.clearAllBttn = new System.Windows.Forms.Button();
             this.squareBttn = new System.Windows.Forms.Button();
             this.sqrtBttn = new System.Windows.Forms.Button();
+            this.displayBox = new System.Windows.Forms.RichTextBox();
             this.btnPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // displayLbl
-            // 
-            this.displayLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(112)))), ((int)(((byte)(128)))));
-            this.displayLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayLbl.Font = new System.Drawing.Font("Lucida Sans", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayLbl.ForeColor = System.Drawing.Color.White;
-            this.displayLbl.Location = new System.Drawing.Point(13, 13);
-            this.displayLbl.Name = "displayLbl";
-            this.displayLbl.Size = new System.Drawing.Size(322, 84);
-            this.displayLbl.TabIndex = 0;
-            this.displayLbl.Text = "0";
-            this.displayLbl.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // btnPanel
             // 
@@ -433,13 +420,28 @@
             this.sqrtBttn.UseVisualStyleBackColor = false;
             this.sqrtBttn.Click += new System.EventHandler(this.sqrtBttn_Click);
             // 
+            // displayBox
+            // 
+            this.displayBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(112)))), ((int)(((byte)(128)))));
+            this.displayBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.displayBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.displayBox.Font = new System.Drawing.Font("Lucida Sans", 27.75F);
+            this.displayBox.ForeColor = System.Drawing.Color.White;
+            this.displayBox.Location = new System.Drawing.Point(13, 13);
+            this.displayBox.Name = "displayBox";
+            this.displayBox.ReadOnly = true;
+            this.displayBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.displayBox.Size = new System.Drawing.Size(322, 84);
+            this.displayBox.TabIndex = 25;
+            this.displayBox.Text = "0";
+            // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(9)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(349, 555);
-            this.Controls.Add(this.displayLbl);
+            this.Controls.Add(this.displayBox);
             this.Controls.Add(this.btnPanel);
             this.Name = "CalculatorForm";
             this.Text = "Calculator";
@@ -450,8 +452,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label displayLbl;
         private System.Windows.Forms.Panel btnPanel;
         private System.Windows.Forms.Button divideBttn;
         private System.Windows.Forms.Button rightBraceBttn;
@@ -476,6 +476,7 @@
         private System.Windows.Forms.Button clearAllBttn;
         private System.Windows.Forms.Button squareBttn;
         private System.Windows.Forms.Button sqrtBttn;
+        private System.Windows.Forms.RichTextBox displayBox;
     }
 }
 
