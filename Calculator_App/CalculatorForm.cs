@@ -75,7 +75,7 @@ namespace Calculator_App
             }
             else if (isResultDisplayed == true)
             {
-                //isResultDisplayed = false;
+                isResultDisplayed = false;
                 return true;
             }
             else
@@ -87,6 +87,8 @@ namespace Calculator_App
         public CalculatorForm()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
         }
 
         //on load set the following settings

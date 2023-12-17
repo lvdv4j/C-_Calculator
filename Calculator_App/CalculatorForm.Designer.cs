@@ -83,7 +83,7 @@
             this.btnPanel.Controls.Add(this.sqrtBttn);
             this.btnPanel.Location = new System.Drawing.Point(13, 111);
             this.btnPanel.Name = "btnPanel";
-            this.btnPanel.Size = new System.Drawing.Size(324, 428);
+            this.btnPanel.Size = new System.Drawing.Size(335, 428);
             this.btnPanel.TabIndex = 23;
             // 
             // divideBttn
@@ -95,7 +95,7 @@
             this.divideBttn.ForeColor = System.Drawing.Color.LightGray;
             this.divideBttn.Location = new System.Drawing.Point(253, 72);
             this.divideBttn.Name = "divideBttn";
-            this.divideBttn.Size = new System.Drawing.Size(69, 60);
+            this.divideBttn.Size = new System.Drawing.Size(80, 60);
             this.divideBttn.TabIndex = 30;
             this.divideBttn.Text = "÷";
             this.divideBttn.UseVisualStyleBackColor = false;
@@ -110,7 +110,7 @@
             this.rightBraceBttn.ForeColor = System.Drawing.Color.LightGray;
             this.rightBraceBttn.Location = new System.Drawing.Point(169, 72);
             this.rightBraceBttn.Name = "rightBraceBttn";
-            this.rightBraceBttn.Size = new System.Drawing.Size(69, 60);
+            this.rightBraceBttn.Size = new System.Drawing.Size(80, 60);
             this.rightBraceBttn.TabIndex = 29;
             this.rightBraceBttn.Text = ")";
             this.rightBraceBttn.UseVisualStyleBackColor = false;
@@ -125,7 +125,7 @@
             this.leftBraceBttn.ForeColor = System.Drawing.Color.LightGray;
             this.leftBraceBttn.Location = new System.Drawing.Point(84, 72);
             this.leftBraceBttn.Name = "leftBraceBttn";
-            this.leftBraceBttn.Size = new System.Drawing.Size(69, 60);
+            this.leftBraceBttn.Size = new System.Drawing.Size(80, 60);
             this.leftBraceBttn.TabIndex = 28;
             this.leftBraceBttn.Text = "(";
             this.leftBraceBttn.UseVisualStyleBackColor = false;
@@ -140,7 +140,7 @@
             this.prevAnsBttn.ForeColor = System.Drawing.Color.LightGray;
             this.prevAnsBttn.Location = new System.Drawing.Point(0, 72);
             this.prevAnsBttn.Name = "prevAnsBttn";
-            this.prevAnsBttn.Size = new System.Drawing.Size(69, 60);
+            this.prevAnsBttn.Size = new System.Drawing.Size(80, 60);
             this.prevAnsBttn.TabIndex = 27;
             this.prevAnsBttn.Text = "Ans";
             this.prevAnsBttn.UseVisualStyleBackColor = false;
@@ -155,7 +155,7 @@
             this.equalsBttn.ForeColor = System.Drawing.Color.LightGray;
             this.equalsBttn.Location = new System.Drawing.Point(171, 368);
             this.equalsBttn.Name = "equalsBttn";
-            this.equalsBttn.Size = new System.Drawing.Size(153, 60);
+            this.equalsBttn.Size = new System.Drawing.Size(164, 60);
             this.equalsBttn.TabIndex = 45;
             this.equalsBttn.Text = "=";
             this.equalsBttn.UseVisualStyleBackColor = false;
@@ -169,7 +169,7 @@
             this.decimalBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.decimalBttn.Location = new System.Drawing.Point(86, 368);
             this.decimalBttn.Name = "decimalBttn";
-            this.decimalBttn.Size = new System.Drawing.Size(69, 60);
+            this.decimalBttn.Size = new System.Drawing.Size(80, 60);
             this.decimalBttn.TabIndex = 44;
             this.decimalBttn.Text = ".";
             this.decimalBttn.UseVisualStyleBackColor = false;
@@ -183,7 +183,7 @@
             this.zeroBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zeroBttn.Location = new System.Drawing.Point(2, 368);
             this.zeroBttn.Name = "zeroBttn";
-            this.zeroBttn.Size = new System.Drawing.Size(69, 60);
+            this.zeroBttn.Size = new System.Drawing.Size(80, 60);
             this.zeroBttn.TabIndex = 43;
             this.zeroBttn.Text = "0";
             this.zeroBttn.UseVisualStyleBackColor = false;
@@ -198,7 +198,7 @@
             this.subtractBttn.ForeColor = System.Drawing.Color.LightGray;
             this.subtractBttn.Location = new System.Drawing.Point(255, 297);
             this.subtractBttn.Name = "subtractBttn";
-            this.subtractBttn.Size = new System.Drawing.Size(69, 60);
+            this.subtractBttn.Size = new System.Drawing.Size(80, 60);
             this.subtractBttn.TabIndex = 42;
             this.subtractBttn.Text = "-";
             this.subtractBttn.UseVisualStyleBackColor = false;
@@ -212,7 +212,7 @@
             this.threeBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.threeBttn.Location = new System.Drawing.Point(171, 297);
             this.threeBttn.Name = "threeBttn";
-            this.threeBttn.Size = new System.Drawing.Size(69, 60);
+            this.threeBttn.Size = new System.Drawing.Size(80, 60);
             this.threeBttn.TabIndex = 41;
             this.threeBttn.Text = "3";
             this.threeBttn.UseVisualStyleBackColor = false;
@@ -226,7 +226,7 @@
             this.twoBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.twoBttn.Location = new System.Drawing.Point(86, 297);
             this.twoBttn.Name = "twoBttn";
-            this.twoBttn.Size = new System.Drawing.Size(69, 60);
+            this.twoBttn.Size = new System.Drawing.Size(80, 60);
             this.twoBttn.TabIndex = 40;
             this.twoBttn.Text = "2";
             this.twoBttn.UseVisualStyleBackColor = false;
@@ -240,7 +240,7 @@
             this.oneBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oneBttn.Location = new System.Drawing.Point(2, 297);
             this.oneBttn.Name = "oneBttn";
-            this.oneBttn.Size = new System.Drawing.Size(69, 60);
+            this.oneBttn.Size = new System.Drawing.Size(80, 60);
             this.oneBttn.TabIndex = 39;
             this.oneBttn.Text = "1";
             this.oneBttn.UseVisualStyleBackColor = false;
@@ -255,7 +255,7 @@
             this.addBttn.ForeColor = System.Drawing.Color.LightGray;
             this.addBttn.Location = new System.Drawing.Point(255, 222);
             this.addBttn.Name = "addBttn";
-            this.addBttn.Size = new System.Drawing.Size(69, 60);
+            this.addBttn.Size = new System.Drawing.Size(80, 60);
             this.addBttn.TabIndex = 38;
             this.addBttn.Text = "+";
             this.addBttn.UseVisualStyleBackColor = false;
@@ -269,7 +269,7 @@
             this.sixBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sixBttn.Location = new System.Drawing.Point(171, 222);
             this.sixBttn.Name = "sixBttn";
-            this.sixBttn.Size = new System.Drawing.Size(69, 60);
+            this.sixBttn.Size = new System.Drawing.Size(80, 60);
             this.sixBttn.TabIndex = 37;
             this.sixBttn.Text = "6";
             this.sixBttn.UseVisualStyleBackColor = false;
@@ -283,7 +283,7 @@
             this.fiveBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fiveBttn.Location = new System.Drawing.Point(86, 222);
             this.fiveBttn.Name = "fiveBttn";
-            this.fiveBttn.Size = new System.Drawing.Size(69, 60);
+            this.fiveBttn.Size = new System.Drawing.Size(80, 60);
             this.fiveBttn.TabIndex = 36;
             this.fiveBttn.Text = "5";
             this.fiveBttn.UseVisualStyleBackColor = false;
@@ -297,7 +297,7 @@
             this.fourBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fourBttn.Location = new System.Drawing.Point(2, 222);
             this.fourBttn.Name = "fourBttn";
-            this.fourBttn.Size = new System.Drawing.Size(69, 60);
+            this.fourBttn.Size = new System.Drawing.Size(80, 60);
             this.fourBttn.TabIndex = 35;
             this.fourBttn.Text = "4";
             this.fourBttn.UseVisualStyleBackColor = false;
@@ -312,7 +312,7 @@
             this.multiplyBttn.ForeColor = System.Drawing.Color.LightGray;
             this.multiplyBttn.Location = new System.Drawing.Point(255, 146);
             this.multiplyBttn.Name = "multiplyBttn";
-            this.multiplyBttn.Size = new System.Drawing.Size(69, 60);
+            this.multiplyBttn.Size = new System.Drawing.Size(80, 60);
             this.multiplyBttn.TabIndex = 34;
             this.multiplyBttn.Text = "×";
             this.multiplyBttn.UseVisualStyleBackColor = false;
@@ -326,7 +326,7 @@
             this.nineBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nineBttn.Location = new System.Drawing.Point(171, 146);
             this.nineBttn.Name = "nineBttn";
-            this.nineBttn.Size = new System.Drawing.Size(69, 60);
+            this.nineBttn.Size = new System.Drawing.Size(80, 60);
             this.nineBttn.TabIndex = 33;
             this.nineBttn.Text = "9";
             this.nineBttn.UseVisualStyleBackColor = false;
@@ -340,7 +340,7 @@
             this.eightBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eightBttn.Location = new System.Drawing.Point(86, 146);
             this.eightBttn.Name = "eightBttn";
-            this.eightBttn.Size = new System.Drawing.Size(69, 60);
+            this.eightBttn.Size = new System.Drawing.Size(80, 60);
             this.eightBttn.TabIndex = 32;
             this.eightBttn.Text = "8";
             this.eightBttn.UseVisualStyleBackColor = false;
@@ -354,7 +354,7 @@
             this.sevenBttn.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sevenBttn.Location = new System.Drawing.Point(2, 146);
             this.sevenBttn.Name = "sevenBttn";
-            this.sevenBttn.Size = new System.Drawing.Size(69, 60);
+            this.sevenBttn.Size = new System.Drawing.Size(80, 60);
             this.sevenBttn.TabIndex = 31;
             this.sevenBttn.Text = "7";
             this.sevenBttn.UseVisualStyleBackColor = false;
@@ -369,7 +369,7 @@
             this.deleteBttn.ForeColor = System.Drawing.Color.LightGray;
             this.deleteBttn.Location = new System.Drawing.Point(253, 0);
             this.deleteBttn.Name = "deleteBttn";
-            this.deleteBttn.Size = new System.Drawing.Size(69, 60);
+            this.deleteBttn.Size = new System.Drawing.Size(80, 60);
             this.deleteBttn.TabIndex = 26;
             this.deleteBttn.Text = "Del";
             this.deleteBttn.UseVisualStyleBackColor = false;
@@ -384,7 +384,7 @@
             this.clearAllBttn.ForeColor = System.Drawing.Color.LightGray;
             this.clearAllBttn.Location = new System.Drawing.Point(169, 0);
             this.clearAllBttn.Name = "clearAllBttn";
-            this.clearAllBttn.Size = new System.Drawing.Size(69, 60);
+            this.clearAllBttn.Size = new System.Drawing.Size(80, 60);
             this.clearAllBttn.TabIndex = 25;
             this.clearAllBttn.Text = "AC";
             this.clearAllBttn.UseVisualStyleBackColor = false;
@@ -399,7 +399,7 @@
             this.squareBttn.ForeColor = System.Drawing.Color.LightGray;
             this.squareBttn.Location = new System.Drawing.Point(84, 0);
             this.squareBttn.Name = "squareBttn";
-            this.squareBttn.Size = new System.Drawing.Size(69, 60);
+            this.squareBttn.Size = new System.Drawing.Size(80, 60);
             this.squareBttn.TabIndex = 24;
             this.squareBttn.Text = "x²";
             this.squareBttn.UseVisualStyleBackColor = false;
@@ -414,7 +414,7 @@
             this.sqrtBttn.ForeColor = System.Drawing.Color.LightGray;
             this.sqrtBttn.Location = new System.Drawing.Point(0, 0);
             this.sqrtBttn.Name = "sqrtBttn";
-            this.sqrtBttn.Size = new System.Drawing.Size(69, 60);
+            this.sqrtBttn.Size = new System.Drawing.Size(80, 60);
             this.sqrtBttn.TabIndex = 23;
             this.sqrtBttn.Text = "√x";
             this.sqrtBttn.UseVisualStyleBackColor = false;
@@ -431,7 +431,7 @@
             this.displayBox.Name = "displayBox";
             this.displayBox.ReadOnly = true;
             this.displayBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.displayBox.Size = new System.Drawing.Size(322, 84);
+            this.displayBox.Size = new System.Drawing.Size(333, 84);
             this.displayBox.TabIndex = 25;
             this.displayBox.Text = "0";
             // 
@@ -440,7 +440,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(9)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(349, 555);
+            this.ClientSize = new System.Drawing.Size(360, 555);
             this.Controls.Add(this.displayBox);
             this.Controls.Add(this.btnPanel);
             this.Name = "CalculatorForm";
